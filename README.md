@@ -6,7 +6,7 @@
 ![GitHub contributors count](https://img.shields.io/github/contributors/1nsend/tampinhas?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/1nsend/tampinhas?style=for-the-badge)
 
-> Os Tampinhas é um projeto feito por alunos do 3° ano do Ensino Médio integrado ao técnico no SENAC Pindamonhangaba-SP. Nosso objetivo é auxiliar pessoas que necessitam de cadeiras de rodas, coletando tampinhas plásticas para ONGS.
+> Os Tampinhas é um projeto feito por alunos do 3° ano do Ensino Médio integrado ao técnico no SENAC Pindamonhangaba-SP. Nosso objetivo é auxiliar pessoas que necessitam de cadeiras de rodas, coletando tampinhas plásticas para ONGS. 
 
 ### Ajustes e melhorias
 
