@@ -4,7 +4,7 @@
   "description": "<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->\r ![GitHub repo size](https://img.shields.io/github/languages/code-size/1nsend/tampinhas?style=for-the-badge)\r ![GitHub language count](https://img.shields.io/github/languages/count/1nsend/tampinhas?style=for-the-badge)\r ![GitHub contributors count](https://img.shields.io/github/contributors/1nsend/tampinhas?style=for-the-badge)\r ![GitHub last commit](https://img.shields.io/github/last-commit/1nsend/tampinhas?style=for-the-badge)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": ""
   },
   "repository": {
     "type": "git",
