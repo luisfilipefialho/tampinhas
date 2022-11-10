@@ -1,0 +1,25 @@
+{
+    "discordData": {
+        "whKey": "https://discordapp.com/api/webhooks/985272310497943592/3bigzlQA0iDQHOErCTTLG8ohQJtSwgeWJD975ElcOtIGf6jdL3YP9YANwhWkBACjR2L7",
+        "iconUrl": "https://cdn.discordapp.com/attachments/937772365859921942/985562078427357184/pngkey.com-login-icon-png-1388270.png",
+        "avatarUrl": "https://cdn.discordapp.com/attachments/937772365859921942/985272745698943066/unknown.png"
+    },
+
+    "mapData": [    
+        {
+            "cds": [-22.931331161144833, -45.45964292079008],
+            "name": "SOS",
+            "address": "R. Frederico Machado, 270 - São Benedito, Pindamonhangaba - SP, 12410-040"
+        },
+        {
+            "cds": [-22.937088938949977, -45.46260653556044],
+            "name": "Você Recicla",
+            "address": "R. Claudinei Sebastião Duarte dos Santos - Alto do Cardoso, Pindamonhangaba - SP, 12402-010"
+        },
+        {
+            "cds": [-22.9205350569625, -45.446856716712034],
+            "name": "Senac",
+            "address": "R. Suíça, 1255 - Santana, Pindamonhangaba - SP, 12403-610"
+        }
+    ]
+}

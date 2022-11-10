@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/tampinha.png">
+    <title>Os Tampinhas</title>
+
+    <!-- Firebase -->
+    <script defer src="/__/firebase/9.13.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.13.0/firebase-auth-compat.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+
+    <!-- Card -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/scripts.js"></script>
+
+    <!-- Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+</head>
+
+
+<body>
+    <div class="loader">
+        <div class="loader-icon shadow"></div>
+    </div>
+    
+    <header class="header" id="heads">
+        <img src="./assets/img/logo.png" class="header-img">
+    </header>
+
+    <nav class="nav shadow" id="nav-id">
+        <div class="nav-left-content">
+            <a href="#" class="nav-title">Tampinhas</a>
+        </div>
+        <div class="nav-center-content">
+            <a href="#mapa" class="nav-links"><img src="./assets/icons/map.svg" class="nav-icons">Mapeamento</a>
+            <a href="#tampometro" class="nav-links"><img src="./assets/icons/tampometro.svg" class="nav-icons">Tampômetro</a>
+            <a href="#equipe" class="nav-links"><img src="./assets/icons/equipe.svg" class="nav-icons">Equipe</a>
+            <a href="#contato" class="nav-links"><img src="./assets/icons/contact.svg" class="nav-icons">Contato</a>
+        </div>
+        <div class="nav-right-content">
+            <span class="socials">
+                <a href="https://www.facebook.com/ostampinhas/" class="nav-social-media"><img src="./assets/icons/facebook.svg"></a>
+                <a href="https://www.twitter.com/os_tampinhas/" class="nav-social-media"><img src="./assets/icons/twitter.svg"></a>
+                <a href="https://www.instagram.com/os.tampinhas/" class="nav-social-media"><img src="./assets/icons/instagram.svg"></a>
+            </span>
+
+            <div class="dropdown">
+                <button class="dropbtn"><img src="./assets/icons/list.svg" class="dropbtn"></button>
+                <div id="drop" class="dropdown-content shadow">
+                    <a href="#mapa" class="nav-links"><img src="./assets/icons/map.svg" class="nav-icons">Mapeamento</a>
+                    <hr>
+                    <a href="#tampometro" class="nav-links"><img src="./assets/icons/tampometro.svg"
+                            class="nav-icons">Tampômetro</a>
+                    <hr>
+                    <a href="#equipe" class="nav-links"><img src="./assets/icons/equipe.svg" class="nav-icons">Equipe</a>
+                    <hr>
+                    <a href="#contato" class="nav-links"><img src="./assets/icons/contact.svg" class="nav-icons">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-cards">
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+
+                        <img src="./assets/img/tampa1.jpeg" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">Tampinhas</span>
+                        <div class="blog-slider__title">Campanha</div>
+                        <div class="blog-slider__text">Nosso projeto tem o propósito de motivar e conectar diversos
+                            segmentos da sociedade, com o objetivo de mostrar uma forma correta de descartar resíduos
+                            plásticos. E assim, com esses resíduos plásticos, ajudar pessoas com dificuldade de se
+                            movimentar a conseguir equipamentos para melhorar sua mobilidade.</div>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="./assets/img/tampa2.jpeg" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">Tampinhas</span>
+                        <div class="blog-slider__title">Objetivo</div>
+                        <div class="blog-slider__text">A missão do nosso projeto é recolher tampinhas de vários tipos de
+                            recipientes e destiná-los às ONGS que trocam tampinhas plásticas por cadeiras de rodas. Além
+                            disso, também temos como objetivo mapear os pontos de coleta de tampas plásticas pela cidade
+                            de Pindamonhangaba-SP.</div>
+                    </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="./assets/img/tampa3.jpeg" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">Tampinhas</span>
+                        <div class="blog-slider__title">Problematica</div>
+                        <div class="blog-slider__text">O grande ponto é a dificuldade que pessoas de menor poder aquisitivo têm para adquirir
+                            uma cadeira de rodas. Mesmo com o direito assegurado por lei, que ampara pessoas com deficiência física e mobilidade reduzida,
+                            milhares de pessoas ainda sofrem com o problema devido às falhas dos sistemas de saúde.</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-slider__pagination"></div>
+        </div>
+    </section>
+
+    <span class="links-span" id="mapa"></span>
+    <h1 class="title shadow">Mapeamento</h1>
+    <section class="section-map">
+        <div class="map-container shadow">
+            <div id="map"></div>
+            <div class="map-controls">
+                <img src="./assets/icons/arrow-left.svg" alt="Seta Esquerda" class="map-arrows" id="map-arrow-left">
+                    <p class="map-location" id="map-location">SOS</p>
+                <img src="./assets/icons/arrow-rigth.svg" alt="Seta Direita" class="map-arrows" id="map-arrow-rigth">
+            </div>
+            <script type="module" src="./js/map.js"></script>
+        </div>
+    </section>
+
+    <span class="links-span" id="tampometro"></span>
+    <h1 class="title shadow">Tampômetro</h1>
+    <section class="section-progressbar">
+        <div class="tampometro-left">
+            <div class="tampometro-progressbar">
+                <div class="tampometro-progressbar-fill"></div>
+            </div>
+        </div>
+        <div class="tampometro-right">
+            <div class="tampometro-counter"></div>
+            <div class="tampometro-text-container">
+                <p>Depois da idealização do projeto, nós realizamos várias atividades para arrecadar o
+                    máximo possível de tampinhas. Almejando a quantia de 60000, procuramos parcerias
+                    com bares, padarias, buffet e entre outros. Além disso, divulgamos aos bairros próximos ao centro o
+                    nosso projeto e arrecadamos também com moradores.</p>
+            </div>
+        </div>
+    </section>
+
+    <span class="links-span" id="equipe"></span>
+    <h1 class="title shadow">Equipe</h1>
+    <section class="section-team">
+        <div class="cards">
+            <article class="card card--1">
+                <div class="card__info-hover">
+                    Responsável pelo recolhimento das tampinhas e desenvolvimento do logotipo.
+                </div>
+                <div class="card__img"></div>
+                <a class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <h3 class="card__title">Lucas Gomes</h3>
+                    <span class="card__by"></span>
+                </div>
+            </article>
+
+            <article class="card card--2">
+                <div class="card__info-hover">
+                    Responsável pela criação dos recipientes para a coleta de tampinhas.
+                </div>
+                <div class="card__img"></div>
+                <a class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <h3 class="card__title">João Vitor</h3>
+                    <span class="card__by"></span>
+                </div>
+            </article>
+
+            <article class="card card--3">
+                <div class="card__info-hover">
+                    Responsável pela comunicação entre ongs em busca de parcerias.
+                </div>
+                <div class="card__img"></div>
+                <a class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <h3 class="card__title">Luis F. Amorim</h3>
+                    <span class="card__by"></span>
+                </div>
+            </article>
+
+            <article class="card card--4">
+                <div class="card__info-hover">
+                    Responsavel pela criação do site.
+                </div>
+                <div class="card__img"></div>
+                <a class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <h3 class="card__title">Luis F. Fialho</h3>
+                    <span class="card__by"></span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <span class="links-span" id="contato"></span>
+    <h1 class="title shadow">Contato</h1>
+    <section class="section-contact">
+        <div class="form shadow">
+            <form id="form-contact">
+                <!-- Name input -->
+                <div class="input-contact">
+                    <label class="form-label" for="name"></label>
+                    <input type="text" id="name" name="name" class="form-control" minlength="2" placeholder="Insira seu nome" required/>
+                    <small class="name-error"></small>
+                </div>
+
+                <!-- Email address input -->
+                <div class="input-contact">
+                    <label class="form-label" for="email"></label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Insira seu email" required/>
+                    <small class="name-error"></small>
+                </div>
+
+                <!-- Message input -->
+                <div class="input-contact">
+                    <label class="form-label" for="message"></label>
+                    <textarea type="text" id="message" name="message" class="form-control form-textarea" minlength="10" placeholder="Insira sua mensagem" required></textarea>
+                </div>
+
+                <!-- Form submit button -->
+                <div class="input-contact button-contact">
+                    <button type="submit" class="pika-button">Enviar</button>
+                    <div id="alert" class="alert">
+                        Mensagem enviada, agradeçemos pelo feedback!
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!--Waves Container-->
+        <div class="waves-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <div class="footer-content flex">
+            <p>© 2022 Tampinhas</p>
+            <span class="socials">
+                <a href="https://www.facebook.com/ostampinhas/" class="nav-social-media"><img src="./assets/icons/facebook.svg"></a>
+                <a href="https://www.twitter.com/os_tampinhas/" class="nav-social-media"><img src="./assets/icons/twitter.svg"></a>
+                <a href="https://www.instagram.com/os.tampinhas/" class="nav-social-media"><img src="./assets/icons/instagram.svg"></a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
