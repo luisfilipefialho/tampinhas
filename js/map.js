@@ -3,7 +3,9 @@ import j from './config.json' assert { type: 'json' };
 let map = L.map('map', {
     center: j.mapData[0].cds,
     zoom: 16,
-    scrollWheelZoom: false
+    scrollWheelZoom: false,
+    dragging: false,
+    tap: false
 });
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
