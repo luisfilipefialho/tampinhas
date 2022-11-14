@@ -371,9 +371,12 @@ section {
   text-align: center;
   font-weight: 300;
   margin-bottom: 40px;
-  text-decoration: underline;
   background-color: #F0F6F6;
   height: 10vh;
+}
+.title img {
+  max-width: 40px;
+  margin-right: 10px;
 }
 
 .shadow {
