@@ -23,6 +23,7 @@ for (let i = 0; i <= 2; i++) {
 let mapIndex = 0
 $('#map-arrow-left').click(() => {
     (mapIndex > -1 && mapIndex < 2) ? mapIndex++ : mapIndex = 0;
+    console.log(mapIndex);
     fly(mapIndex)
 });
 
