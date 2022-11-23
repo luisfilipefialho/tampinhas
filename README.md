@@ -10,9 +10,7 @@
 
 ### Ajustes e melhorias
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
-
-- [ ] Mapeamento dos locais de coleta.
+O projeto ainda está em desenvolvimento.
 
 ## 🤝 Colaboradores
 
